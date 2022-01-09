@@ -52,6 +52,9 @@
         .section .title::after{
              content: "services";
         }
+        .parallax-container{
+            height: 320px;
+        }
         @media screen and (max-width:670px){
             header{
                 min-height: 300px;
@@ -130,6 +133,39 @@
         </div>
     </section>
 
+    <!--parallex/ background image that moves depends on scrolling-->
+    <div class="parallax-container">
+        <div class="parallax"><img src="image/parallax.jpg"></div>
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+
+    </div>
+    <!-- <div class="parallax-container">
+        <div class="parallax"><img src="image/parallax.jpg"></div>
+    </div> -->
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="image/parallax2.jpg">
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+
+    </div>
+
+
     <script src="materialize/jquery.min.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
     <script>
@@ -139,6 +175,8 @@
             
             //activate zoom in and zoom out on image
             $('.materialboxed').materialbox();
+
+            $('.parallax').parallax();
 
         });
     </script>
