@@ -19,6 +19,39 @@
             background-position: center;
             min-height: 1000px;
         }
+        section .title{
+            position: relative;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+        }
+        section .title::before{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            width: 180px;
+            height: 3px;
+            background: #000;
+            transform: translateX(-50%);
+
+        }
+        section .title::after{
+            position: absolute;
+            bottom: -18px;
+            color: crimson;
+            font-size: 20px;
+            left: 50%;
+            padding: 0px 5px;
+            background: #fff;
+            transform: translateX(-50%);
+
+        }
+        .section .title::after{
+             content: "services";
+        }
         @media screen and (max-width:670px){
             header{
                 min-height: 300px;
@@ -29,7 +62,7 @@
 <body>
     <!--navbar-->
     <header>
-        <nav class="blue">
+        <nav class="indigo darken-5">
             <div class="container">
                 <a href="" class="sidenav-trigger" data-target="links">
                     <i class="material-icons">menu</i>
@@ -50,16 +83,63 @@
                 <li><a href="">About Us</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Contacts</a></li> 
-            </ul>
-        
-        
+            </ul> 
     </header>
+
+    <!--service section-->
+    <section class="container section">
+        <h4 class="center-align indigo-text title">Services we offer</h4>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="image/lab.jpg" alt="" class="materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4 class="blue-text">Computer Skills</h4>
+                <p>We teach people computer skills like: Microsoft office,</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="image/papeterie.jpg" alt="" class="materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4 class="blue-text">Stationery Store</h4>
+                <p>We provide all office and school materials like staples, gum, book, pens, pencils,....</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="image/printing.jpg" alt="" class="materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h4 class="blue-text">Printing House</h4>
+                <p>We print all graphic and wroten papers in all format even large plotters we print them</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="image/web-design.png" alt="" class="materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4 class="blue-text">Stationery Store</h4>
+                <p>We put your business online through web design, web development of website and we offer web management </p>
+            </div>
+        </div>
+    </section>
 
     <script src="materialize/jquery.min.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
     <script>
         $(document).ready(function(){
+            //activating sidenavigation on menu
             $('.sidenav').sidenav();
+            
+            //activate zoom in and zoom out on image
+            $('.materialboxed').materialbox();
+
         });
     </script>
 </body>
