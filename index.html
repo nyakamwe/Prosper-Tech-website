@@ -55,6 +55,12 @@
         .parallax-container{
             height: 320px;
         }
+        .tabs .indicator{
+            background-color: green;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active {
+           background-color: transparent;
+        }
         @media screen and (max-width:670px){
             header{
                 min-height: 300px;
@@ -138,17 +144,60 @@
         <div class="parallax"><img src="image/parallax.jpg"></div>
     </div>
 
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+    <section class="container">
+        <div class="row">
+            <div class="col s12 l4">
+                <h5 class="indigo-text">About Us</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, dicta magni provident eius temporibus recusandae eaque ratione consectetur dolorem doloribus molestias accusamus quasi minima sequi in officia? Eius, ipsam possimus!</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6 indigo-text"><a href="#location" class="indigo-text">Location</a></li>
+                    <li class="tab col s6  "><a href="#team" class="indigo-text">Team</a></li>
+                </ul>
 
-    </div>
-    <!-- <div class="parallax-container">
-        <div class="parallax"><img src="image/parallax.jpg"></div>
-    </div> -->
+                <div id="team">
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">person</i>
+                            <p>Prosper</p>     
+                            <p class="grey-text">CEO</p>
+                            <a href="" class="secondary-content">
+                                <i class="material-icons">email</i>
+                            </a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">person</i>
+                            <p>Alliete</p>
+                            <p class="grey-text">Secretary</p>
+                            <a href="" class="secondary-content">
+                                <i class="material-icons">email</i>
+                            </a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">person</i>
+                            <p>Habib</p>
+                            <p class="grey-text">Developer</p>
+                            <a href="" class="secondary-content">
+                                <i class="material-icons">email</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="location">
+                    <i class="material-icons">place</i>
+                    <span class="right">GASABO-KINYINYA</span>
+
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+        
+    </section>
 
     <div class="parallax-container">
         <div class="parallax">
@@ -156,14 +205,39 @@
         </div>
     </div>
 
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ab cumque ipsum commodi voluptatibus porro vero incidunt natus, voluptas nisi vel magni assumenda, dolores facere voluptatem perspiciatis repellendus, atque recusandae.</p>
+    <section class="container">
+        <div class="row">
+            <div class="col s12 l5">
+                <h4 class="indigo-text">Get In Touch</h4>
+                <p>In case you are interested to get much more you can talk to me through different platforms.</p>
+            </div>
 
-    </div>
+            <div class="col s12 l4 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons  prefix">email</i>
+                        <input type="email" name="email" id="email">
+                        <label for="email">Enter Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons  prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Pick date</label>
+                    </div>
+                    <div class="input-field">
+                       <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        
+    </section>
 
 
     <script src="materialize/jquery.min.js"></script>
@@ -176,8 +250,16 @@
             //activate zoom in and zoom out on image
             $('.materialboxed').materialbox();
 
+            //activate scrolling background
             $('.parallax').parallax();
 
+            //activate tabs
+            $('.tabs').tabs();
+
+            //activate date picking
+            $('.datepicker').datepicker({
+                disableWeekends:true
+            });
         });
     </script>
 </body>
