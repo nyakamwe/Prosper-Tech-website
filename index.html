@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
-    <title>Materialize css</title>
+    <title>Prosper Technology</title>
     <style>
         header{
             background: url(image/profile-1.jpg);
@@ -83,7 +83,7 @@
 </head>
 <body>
     <!--navbar-->
-    <header>
+    <header id="header">
         <nav class="grey darken-4">
             <div class="container">
                 <a href="" class="sidenav-trigger" data-target="links">
@@ -91,25 +91,25 @@
                 </a>
                 <a href="" class="brand-logo">Prosper Tech</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                 </ul>
             </div>
             
         </nav>
         
             <ul class="sidenav" id="links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contacts</a></li> 
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contacts</a></li> 
             </ul> 
     </header>
 
     <!--service section-->
-    <section class="container section">
+    <section class="container section scrollspy" id="services">
         <h4 class="center-align indigo-text title">Services we offer</h4>
         <div class="row">
             <div class="col s12 l4">
@@ -157,7 +157,7 @@
         <div class="parallax"><img src="image/parallax.jpg"></div>
     </div>
 
-    <section class="container">
+    <section class="container scrollspy" id="about">
         <div class="row">
             <div class="col s12 l4">
                 <h5 class="indigo-text">About Us</h5>
@@ -203,13 +203,8 @@
                     <span class="right">GASABO-KINYINYA</span>
 
                 </div>
-            </div>
-
-            
+            </div> 
         </div>
-
-        
-        
     </section>
 
     <div class="parallax-container">
@@ -218,7 +213,7 @@
         </div>
     </div>
 
-    <section class="container">
+    <section class="container scrollspy" id="contact">
         <div class="row">
             <div class="col s12 l5 get-in-touch">
                 <h4 class="indigo-text">Get In Touch</h4>
@@ -258,10 +253,7 @@
                     </div>
                 </form>
             </div>
-        </div>
-
-        
-        
+        </div>     
     </section>
 
     <footer class="page-footer grey darken-3">
@@ -312,6 +304,8 @@
             $('.datepicker').datepicker({
                 disableWeekends:true
             });
+            //initialize scrolling behaviour
+            $('.scrollspy').scrollSpy();
         });
     </script>
 </body>
