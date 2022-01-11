@@ -61,6 +61,19 @@
         .tabs .tab a:focus, .tabs .tab a:focus.active {
            background-color: transparent;
         }
+        .fab{
+            padding-right: 10px;
+        }
+      
+        .get-in-touch .collection{
+            border: none;
+           
+        }
+        .get-in-touch .collection .collection-item{
+            border-bottom: none;
+        }
+
+    
         @media screen and (max-width:670px){
             header{
                 min-height: 300px;
@@ -71,7 +84,7 @@
 <body>
     <!--navbar-->
     <header>
-        <nav class="indigo darken-5">
+        <nav class="grey darken-4">
             <div class="container">
                 <a href="" class="sidenav-trigger" data-target="links">
                     <i class="material-icons">menu</i>
@@ -207,9 +220,21 @@
 
     <section class="container">
         <div class="row">
-            <div class="col s12 l5">
+            <div class="col s12 l5 get-in-touch">
                 <h4 class="indigo-text">Get In Touch</h4>
                 <p>In case you are interested to get much more you can talk to me through different platforms.</p>
+                <ul class="collection ">
+                    <li class="collection-item avatar">
+                        <i class="fas fa-user circle"></i>
+                        <p>Prosper</p> 
+                        <span class="grey-text">0786345123</span>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="fas fa-envelope circle"></i>
+                        <p>Email</p> 
+                        <span class="grey-text">prospertech@gmail.com</span>
+                    </li>
+                </ul>
             </div>
 
             <div class="col s12 l4 offset-l2">
@@ -238,6 +263,33 @@
         
         
     </section>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, quod blanditiis sit odit quasi 
+                        dolorem, dignissimos labore ab laudantium illo, nesciunt dolor fugit tempore eum porro. Accusantium
+                         molestias deleniti necessitatibus?
+                    </p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Find us on</h5>
+                    <ul>
+                        <li><a href="#!"><i class="fab fa-facebook"></i>Facebook</a></li>
+                        <li><a href="#!"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="#!"><i class="fab fa-instagram pink-text"></i>Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align ">
+                &copy; 2022 Prosper Tech
+            </div>
+        </div>
+    </footer>
 
 
     <script src="materialize/jquery.min.js"></script>
